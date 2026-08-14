@@ -40,7 +40,7 @@ export function Gallery() {
           Tables, consoles, VR and the ambience — tap any photo to enlarge.
         </p>
 
-        <div className="mt-10 grid auto-rows-[190px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid auto-rows-[190px] grid-flow-dense grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {photos.map((photo, index) => (
             <button
               key={photo.alt}
