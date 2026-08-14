@@ -79,10 +79,11 @@ export function Gallery() {
             <X className="h-5 w-5" />
           </button>
           <img
-            src={photos[active].src}
-            alt={photos[active].alt}
+            src={photos[active]?.src}
+            alt={photos[active]?.alt ?? ""}
             className="max-h-[85vh] w-auto max-w-full rounded-3xl border border-border object-contain shadow-[var(--shadow-glow)]"
           />
+
         </div>
       )}
     </section>
