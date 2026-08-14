@@ -120,6 +120,9 @@
     color-mix(in oklab, var(--background) 35%, transparent),
     color-mix(in oklab, var(--background) 96%, transparent)
   );
+  --hero-foreground: var(--foreground);
+  --hero-muted: var(--muted-foreground);
+
   --shadow-glow: 0 22px 60px -20px color-mix(in oklab, var(--primary) 60%, transparent);
   --shadow-card: 0 20px 50px -24px oklch(0 0 0 / 0.85);
 }
