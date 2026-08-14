@@ -16,10 +16,9 @@ export function Hero() {
         style={{ background: "var(--gradient-hero)" }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6">
-        <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-background/50 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-gold backdrop-blur">
+      <div className="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-28 text-hero-foreground sm:px-6">
+        <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-black/25 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-gold backdrop-blur">
           <MapPin className="h-3.5 w-3.5" /> Dehradun, Uttarakhand
         </span>
 
@@ -31,7 +30,7 @@ export function Hero() {
           Where Precision Meets Play
         </p>
 
-        <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <p className="mt-4 max-w-xl text-base leading-relaxed text-hero-muted sm:text-lg">
           Premium snooker and pool tables, PS5, Xbox and VR gaming — plus Master's Kitchen for food
           and beverages. Doon's most inviting lounge to play late.
         </p>
@@ -45,22 +44,23 @@ export function Hero() {
           </a>
           <a
             href="#gallery"
-            className="inline-flex items-center justify-center rounded-full border border-border bg-background/60 px-7 py-3.5 text-base font-semibold backdrop-blur transition-colors hover:bg-secondary"
+            className="inline-flex items-center justify-center rounded-full border border-hero-muted/30 bg-black/25 px-7 py-3.5 text-base font-semibold backdrop-blur transition-colors hover:bg-black/40"
           >
             View Gallery
           </a>
         </div>
 
-        <div className="mt-10 inline-flex items-center gap-3 rounded-2xl border border-border bg-background/60 px-4 py-3 backdrop-blur">
+        <div className="mt-10 inline-flex items-center gap-3 rounded-2xl border border-hero-muted/25 bg-black/25 px-4 py-3 backdrop-blur">
           <span className="font-display text-2xl font-bold text-gold">4.8</span>
           <span className="flex" aria-hidden="true">
             {[0, 1, 2, 3, 4].map((i) => (
               <Star key={i} className="h-4 w-4 fill-gold text-gold" />
             ))}
           </span>
-          <span className="text-sm text-muted-foreground">95 Google reviews</span>
+          <span className="text-sm text-hero-muted">95 Google reviews</span>
         </div>
       </div>
+
     </section>
   );
 }
