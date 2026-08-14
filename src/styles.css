@@ -51,6 +51,9 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
   --color-surface: var(--surface);
+  --color-hero-foreground: var(--hero-foreground);
+  --color-hero-muted: var(--hero-muted);
+
 }
 
 :root {
